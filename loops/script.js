@@ -52,9 +52,8 @@ function charCount(word, char) {
     if (word[i] === char) {
       count++;
     }
-
-    return count;
   }
+  return count;
 }
 
 // TODO: Implement the charCount function
