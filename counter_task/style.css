@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: monospace;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 0;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  height: 100%;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(lemonchiffon, lemonchiffon);
+  background-size: var(--counter, 0%) 100%;
+  background-repeat: no-repeat;
+  transition: 0.25s background-size ease-in-out;
+}
+
+header {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lemonchiffon;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 1rem;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: auto;
+}
