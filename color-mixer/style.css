@@ -1,0 +1,31 @@
+html,
+body {
+  font-family: monospace;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+  background-color: gray;
+}
+
+input {
+  padding-right: 10px;
+}
+
+input[class="red"] {
+  accent-color: #f55050;
+}
+input[class="green"] {
+  accent-color: green;
+}
+
+input[class="blue"] {
+  accent-color: blue;
+}
