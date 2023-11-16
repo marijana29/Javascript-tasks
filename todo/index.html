@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo App</title>
+</head>
+
+<body>
+    <h1>Todo App</h1>
+
+    <input type="text" id="new-todo" placeholder="What's up?" />
+    <button id="add-todo">Add ToDo</button>
+    <br />
+
+    <label>
+        <input type="radio" name="filter" value="all" checked> All
+    </label>
+    <label>
+        <input type="radio" name="filter" value="open"> Open
+    </label>
+    <label>
+        <input type="radio" name="filter" value="done"> Done
+    </label>
+
+    <ul id="list"></ul>
+    <button id="remove-done-todos">Remove Done Todos</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
