@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <main>
+        <form class="description-wrapper">
+            <label for="todo-description">Was möchtest du tun?</label>
+            <input type="text" name="todo-description" id="todo-description" placeholder="Neue Aufgabe hinzufügen"
+                autocomplete="off" />
+            <button type="button" id="btn-add">Hinzufügen</button>
+        </form>
+
+        <form class="filter-wrapper">
+            <input type="radio" name="filter" id="all" />
+            <label for="all">Alle</label>
+            <input type="radio" name="filter" id="open" />
+            <label for="open">Offen</label>
+            <input type="radio" name="filter" id="done" />
+            <label for="done">Fertig</label>
+        </form>
+
+        <button type="button" id="btn-remove">Fertige löschen</button>
+
+        <ul id="todos-list"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
