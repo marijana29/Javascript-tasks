@@ -1,0 +1,11 @@
+body {
+  margin: 5rem;
+}
+
+#new-todo {
+  max-width: 300px;
+}
+
+#add-todo {
+  margin-left: 10px;
+}
