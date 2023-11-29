@@ -1,5 +1,13 @@
 body {
-  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #new-todo {
@@ -8,4 +16,24 @@ body {
 
 #add-todo {
   margin-left: 10px;
+}
+
+#general-container {
+  display: flex;
+  flex-direction: column;
+}
+#container {
+  text-align: center;
+}
+
+#list-container {
+  text-align: center;
+}
+
+#radio-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: 10px;
 }

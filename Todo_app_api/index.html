@@ -9,11 +9,27 @@
 </head>
 
 <body>
-    <input type="text" id="new-todo" />
+    <section id="general-container">
+        <div id="container">
+            <input type="text" id="new-todo" />
 
-    <button id="add-todo">Add Todo</button>
-    <ul id="list"></ul>
-    <button id="remove-done-todos">Remove Done Todos</button>
+            <button id="add-todo">Add Todo</button>
+            <div id="error-message" style="color: red;"></div>
+        </div>
+        <div id="radio-div">
+            <input type="radio" name="filter" value="all" id="all" checked>
+            <label for="all">All</label>
+            <input type="radio" name="filter" value="open" id="open">
+            <label for="open">Open</label>
+            <input type="radio" name="filter" value="done" id="done">
+            <label for="done">Done</label>
+        </div>
+        <div id="list-container">
+            <ul id="list"></ul>
+            <button id="remove-done-todos">Remove Done Todos</button>
+        </div>
+    </section>
+    <script src="api.js"></script>
     <script src="script.js"></script>
 </body>
 
